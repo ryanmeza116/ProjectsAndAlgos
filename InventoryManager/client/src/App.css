@@ -48,7 +48,7 @@
   margin-right: auto;
 }
 .styled-table thead tr {
-  background-color: #88b04b;
+  background-color: #34568b;
     color: #ffffff;
     text-align: left;
 }
@@ -67,10 +67,44 @@
 }
 
 .styled-table tbody tr:last-of-type {
-  border-bottom: 2px solid #88b04b;
+  border-bottom: 2px solid #34568b;
 }
 
 .styled-table tbody tr.active-row {
   font-weight: bold;
-  color: #88b04b;
+  color: #34568b;
 }
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #34568b;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+input[type=submit]:hover {
+  background-color:#34568b;
+}
+/* #34568b */
+.create_item{
+  margin-left: 35%;
+  margin-right: 35%;
+}
+
+.youtube_link {
+  color : white
+}
+

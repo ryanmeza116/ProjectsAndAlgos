@@ -14,6 +14,9 @@ return (
         <NavLink className="nav-link" to="/new">
         Add Item to Inventory Database
         </NavLink>
+        <span> | </span>
+        <a href = "https://www.youtube.com/c/KiesMotorsports" className='youtube_link'> Vist us on YouTube!</a>
+        
 </header>
 );
 }

@@ -25,15 +25,16 @@ const ItemSchema = new mongoose.Schema(
                 "Please enter how many of the following item have been received"
             ],
         },
-        ItemBrand : {
+        itemBrand : {
             type : String , 
             enum : ['FTP', "MST", "Dahler", "Kies", "Other"],
-            required : [true, "Please select if the brand is a Kies brand or not."]
+            required : [true, "Please select a brand"]
+            
         },
-        ItemReceiver : {
+        itemReceiver : {
             type : String , 
-            required : [true, "Please include your name with item reception "],
             enum : ["Ryan Meza", "Blaise Martinez", "Gary Seagrave", "Bryan Kiefer", "Josh Gonzales", "Lisa Schaffer"],
+            required : [true, "Please select who received this product"]
         },
     },
     {

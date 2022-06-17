@@ -20,6 +20,8 @@ function ItemList() {
     }
 
     return (
+    <div>
+        <h2>All Current Inventory Stocked at Kies Motorsports:</h2>
         <table class = "styled-table">
             <thead>
                 <tr>
@@ -55,6 +57,7 @@ function ItemList() {
                 })}
             </tbody>
         </table>
+    </div>
     )
 }
 
