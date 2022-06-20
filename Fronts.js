@@ -34,7 +34,25 @@ front() {
         return this.head.value;
     }
 }
+
+display() {
+    const listStr = "";
+    if(this.head == null) {
+        return listStr;
+    }
+    listStr += this.head.value;
+
+    let runner = this.head.next;
+    while(runner != null) {
+        listStr += "," + runner.value;
+        runner = runner.next;
+
+    }
+    return listStr;
 }
+
+}
+
 
 const mySll = new SLL();
 
