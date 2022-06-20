@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import axios from 'axios';
+import DeleteButton from './DeleteItem';
 
 function Item() {
     const [item, setItem] = useState([]);
@@ -26,6 +27,7 @@ function Item() {
             <p>Item Quantity : {item.itemQuantity}</p>
             <p>Item Brand : {item.itemBrand}</p>
             <p>Item Receiver : {item.itemReceiver}</p>
+            <DeleteButton id = {item._id} handleDelete = {() => navigate('/')} />
         </div>
     );
 }
